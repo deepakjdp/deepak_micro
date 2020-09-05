@@ -6,8 +6,8 @@ node {
     def scannerHome = tool 'sonar_scan';
     
     withSonarQubeEnv('sonarqube') { // If you have configured more than one global server connection, you can specify its name
-      cd "${scannerHome}/bin"
-      bat sonar-scanner
+      bat "cd ${scannerHome}/bin"
+      bat "sonar-scanner"
     }
   }
 }
