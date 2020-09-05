@@ -10,7 +10,7 @@ node {
        // echo $scannerHome1
         //bat 'C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\sonar_scan\bin\sonar-scanner'
         bat """
-        cd C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\sonar_scan\bin
+        cd C:\\Program Files (x86)\\Jenkins\\tools\\hudson.plugins.sonar.SonarRunnerInstallation\\sonar_scan\\bin
         sonar-scanner        
          """ 
     }
