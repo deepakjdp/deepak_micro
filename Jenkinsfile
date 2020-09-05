@@ -2,10 +2,11 @@ pipeline {
         agent none
         stages {
           stage("build & SonarQube analysis") {
-            agent any
+            agent any;
+            def scannerHome = tool 'SonarScanner 4.0';  
             steps {
               withSonarQubeEnv('sonarqube') {
-                build 'mvn clean package sonar:sonar'
+                      sh "${scannerHome}/bin/sonar-scanner"
               }
             }
           }
