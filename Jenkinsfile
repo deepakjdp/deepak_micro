@@ -11,7 +11,7 @@ node {
         //bat 'C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\sonar_scan\bin\sonar-scanner'
         bat """
         cd C:\\Program Files (x86)\\Jenkins\\tools\\hudson.plugins.sonar.SonarRunnerInstallation\\sonar_scan\\bin
-        sonar-scanner -Dsonar.projectKey=deepak_micro -Dsonar.projectVersion=1.0 -Dsonar.sources="C:\\Users\\deepak sharma\\.jenkins\\workspace\\%JOB_HOME%\\deepak_micro\\src"     
+        sonar-scanner -Dsonar.projectKey=deepak_micro -Dsonar.projectVersion=1.0 -Dsonar.sources="C:\\Users\\deepak sharma\\.jenkins\\workspace\\pipeline_one\\deepak_micro\\src"     
          """ 
     }
   }
