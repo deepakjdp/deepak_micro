@@ -15,6 +15,8 @@ public class ApplicationWebXml extends SpringBootServletInitializer {
         /**
          * set a default to use when no profile is configured.
          */
+        String data=null;
+        System.out.println(data.toString());
         DefaultProfileUtil.addDefaultProfile(application.application());
         return application.sources(DeepakMicroApp.class);
     }
