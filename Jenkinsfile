@@ -7,6 +7,7 @@ node {
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
+    def test = tool for merge test;  
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     echo "etst"
