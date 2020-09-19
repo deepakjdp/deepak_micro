@@ -4,10 +4,11 @@ node {
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'sonar_scan';
+      
     def scannerHome = tool 'sonar_scan';
-    def scannerHome = tool 'sonar_scan';
-    def scannerHome = tool 'sonar_scan';
-    def scannerHome = tool 'sonar_scan';
+    def1 scannerHome = tool 'sonar_scan';
+    def2 scannerHome = tool 'sonar_scan';
+    def3 scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     echo "etst"
     echo "testing"
