@@ -4,16 +4,13 @@ node {
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'sonar_scan';
-<<<<<<< HEAD
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     def scannerHome = tool 'sonar_scan';
     echo "etst"
-=======
     echo "testing"
->>>>>>> origin/master
     withSonarQubeEnv('sonarqube') { // If you have configured more than one global server connection, you can specify its name
       def scannerHome1 = bat "cd ${scannerHome}/bin"
         echo "test"
